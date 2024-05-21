@@ -23,9 +23,6 @@ class Platformer extends Phaser.Scene {
     create() {
         gemCount = this.add.text(46, 20, '0', { fontSize: '24px', fill: '#fff' });
 
-        hud = this.add.container(0,0, [gemCount]);
-        hud.setScrollFactor(0);
-
 
         // Create a new tilemap game object which uses 18x18 pixel tiles, and is
         // 45 tiles wide and 25 tiles tall.
